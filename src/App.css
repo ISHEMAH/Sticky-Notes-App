@@ -1,0 +1,194 @@
+@font-face {
+  font-family: VisbyBold;
+  src: url(./Fonts/visby-cufonfonts/VisbyBold.otf);
+}
+@font-face {
+  font-family: VisbyLight;
+  src: url(./Fonts/visby-cufonfonts/VisbyLight.otf);
+}
+@font-face {
+  font-family: VisbyMedium;
+  src: url(./Fonts/visby-cufonfonts/VisbyMedium.otf);
+}
+
+body{
+  background-color:  rgb(0, 0, 22);
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgb(246, 255, 0);
+}
+
+header div{
+  width: 50px;
+  height: 50px;
+  margin-left: 5%;
+}
+header h1{
+  color: white;
+  font-family: VisbyBold;
+  margin-left: 2%;
+}
+.Logo img{
+  width: 100%;
+
+}
+.Content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 2%;
+  /* border: 1px solid red; */
+  height: 70%;
+  justify-content: end;
+  
+}
+.Content .Notes .Note{
+  background-color: rgb(255, 255, 105);
+  padding: 1% 4%;
+  padding-bottom: 5%;
+  border-radius: 20px;
+  max-width: 200px;
+  width: 35%;
+  height: 100%;
+  transition: all 0.2s ease;
+
+}
+.Notes{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: transparent;
+  /* border: 1px solid red; */
+  font-size: 1.2em;
+  font-family: VisbyMedium;
+  justify-content: end;
+
+}
+.FaTrashAlt{
+  color: rgb(0, 0, 0);
+  align-self: last baseline;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.FaTrashAlt:hover {
+  color: red;
+}
+
+.FaTrashDiv {
+  width: 100%;
+  height: 80%;
+  display: inline-block;
+  padding-top: 40%;
+
+}
+.FaTrashDiv2{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+
+}
+.empty{
+  color: white;
+  font-family: VisbyMedium;
+  justify-self: center;
+  padding-left: 20%;
+
+}
+.addnoteform{
+  width: 90%;
+  height: 90%;
+  min-height: 400px;
+  background-color: rgb(0, 132, 255);
+  border-radius: 20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.addnoteroot{
+  width: 40%;
+}
+.addnoteform textarea{
+  width: 90%;
+  height: 60%;
+  margin: 10%;
+}
+.addnoteform button{
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.addnoteform button:hover{
+  background-color: black;
+}
+.addnoteform button:hover .plus{
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.plus{
+  border-radius: 5px;
+  scale: (1.2);
+}
+textarea{
+  border-radius: 10px;
+  font-family: VisbyMedium;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.237);
+  border: none;
+  text-indent: 10px;
+  font-size: 1.1em;
+  transition: all 0.2s ease-in-out;
+  padding-top: 10px;
+  resize: none;
+}
+textarea:hover{
+  background-color: rgba(255, 255, 255, 0.303);
+  transition: all 0.2s ease-in-out;
+}
+textarea:hover::placeholder{
+  font-size: 1.05em;
+  transition: all 0.2s ease-in-out;
+}
+textarea::placeholder{
+  color: white;
+  
+}
+textarea:focus{
+  border: none !important;
+}
+.search-container{
+  display: flex;
+  height: fit-content;
+  padding: 2% 4%;
+  align-items: center;
+  justify-content: center;
+}
+.search-container input{
+  width: 80%;
+  height: 40px;
+  display: flex;
+  font-family: VisbyMedium;
+  text-indent: 10px;
+  color: black;
+  border-radius: 50px;
+  border: none;
+}
+.maincontent{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
